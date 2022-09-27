@@ -3,6 +3,9 @@ import "./App.css";
 
 import List from "./components/List";
 
+import Clock from "./containers/Clock";
+import Form from "./containers/Form";
+
 function App() {
   return (
     <div className="App">
@@ -11,7 +14,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <List></List>
+        <Form />
+        <Clock />
         <a
           className="App-link"
           href="https://reactjs.org"
