@@ -1,7 +1,7 @@
 import { Component } from "react";
 import data from "../data.json";
 
-import List from "../components/List";
+import { AppartList } from "../components";
 
 export default class Form extends Component {
   state = { value: "", filteredData: data };
@@ -22,7 +22,7 @@ export default class Form extends Component {
       <div>
         <input type="text" onChange={this.handleChange.bind(this)} />
         <p>{value}</p>
-        <List data={filteredData}></List>
+        <AppartList data={filteredData} />
       </div>
     );
   }

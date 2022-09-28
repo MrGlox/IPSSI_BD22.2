@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src/",
+        "paths": {
+            "components/*": ["./components/*"],
+            "containers/*": ["./containers/*"],
+            "pages/*": ["./pages/*"],
+            "styles/*": ["./styles/*"]
+          },
+      "module": "commonjs",
+      "target": "es6"
+    },
+    "exclude": ["node_modules"]
+}
