@@ -11,6 +11,7 @@ import ErrorPage from "./error-page";
 import App from "App";
 import Clock from "./containers/Clock";
 import Appart from "./containers/Form";
+import Fetch from "./containers/Fetch";
 
 import "./index.css";
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/apparts",
         element: <Appart></Appart>,
+      },
+      {
+        path: "/fetch",
+        element: <Fetch></Fetch>,
       },
     ],
   },

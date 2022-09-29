@@ -15,6 +15,9 @@ export default function Header() {
           <li>
             <a href="clock">Clock</a>
           </li>
+          <li>
+            <a href="fetch">Fetch</a>
+          </li>
         </ul>
       </nav>
     </div>
