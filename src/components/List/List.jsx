@@ -1,6 +1,6 @@
 import { AppartItem } from "components";
 
-export default function List({ data }) {
+export default function List({ data = [] }) {
   return (
     <ul>
       {data.map((element, index) => (

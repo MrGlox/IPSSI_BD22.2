@@ -14,6 +14,8 @@ import Clock from "./containers/Clock";
 import Appart from "./containers/Form";
 import Fetch from "./containers/Fetch";
 
+import { Provider } from "contexts/Main";
+
 import "./index.css";
 
 const queryClient = new QueryClient();
@@ -50,9 +52,11 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <QueryClientProvider client={queryClient}>
-    <RouterProvider router={router} />
-  </QueryClientProvider>
+  <Provider>
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
