@@ -13,6 +13,7 @@ import App from "App";
 import Clock from "./containers/Clock";
 import Appart from "./containers/Form";
 import Fetch from "./containers/Fetch";
+import AppartDetails from "./containers/AppartDetails";
 
 import { Provider } from "contexts/Main";
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/apparts",
         element: <Appart></Appart>,
+      },
+      {
+        path: "/apparts/:slug",
+        element: <AppartDetails />,
       },
       {
         path: "/fetch",
